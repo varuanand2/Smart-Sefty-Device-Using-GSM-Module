@@ -6,7 +6,7 @@ A feature-rich embedded safety system designed for emergency response. This devi
 
 ---
 
-## 🔧 Key Features
+## 🔧 Key Features 
 - 📩 Sends **emergency SMS with live location**.
 - 📍 Integrated **GPS module** to track real-time position.
 - 📡 Uses **GSM SIM800L** for communication.

@@ -2,35 +2,36 @@
 
 # 📱 Smart Safety Device
 
-A compact and real-time embedded system designed to enhance personal safety. It allows users to send an emergency SMS alert with just one button press using a GSM SIM800L module. The system provides feedback via an I2C 16x2 LCD display.
+A real-time GPS and GSM-based safety device designed to send emergency alerts with **live location**. With a single press of a panic button, it sends an SMS containing Google Maps location link to a predefined phone number. The system provides user feedback via an I2C LCD.
 
 ---
 
 ## 🔧 Key Features
-- 📩 Sends instant **emergency SMS alerts** via GSM.
-- 🧠 Powered by **Arduino Mega 2560** for reliable performance.
-- 📟 **I2C LCD 16x2** used for status display (compact wiring).
-- 🔘 Simple one-button interface for quick response.
-- 💡 Ideal for **personal security and emergency communication**.
+- 📩 Sends **emergency SMS with live location**.
+- 📍 Integrated **GPS module** to track real-time position.
+- 📡 Uses **GSM SIM800L** for communication.
+- 📟 Status display via **I2C LCD 16x2**.
+- 🔘 Simple one-button emergency trigger.
+- 🧠 Built on **Arduino Mega 2560**.
 
 ---
 
 ## 🧰 Hardware Components
-| Component       | Description                  |
-|----------------|------------------------------|
-| Arduino Mega    | Main controller              |
-| GSM SIM800L     | Sends SMS via mobile network |
-| I2C LCD 16x2    | Displays system status       |
-| Push Button     | Triggers emergency alert     |
-| 3.7V Li-Po battery | 5V supply for GSM module  |
-| Jumper Wires    | Circuit connections          |
-| Power Supply    | 5V (regulated)               |
+| Component         | Description                             |
+|------------------|-----------------------------------------|
+| Arduino Mega 2560 | Main microcontroller                    |
+| GSM SIM800L       | Sends SMS via mobile network            |
+| GPS Module (NEO-6M) | Provides real-time location           |
+| I2C LCD 16x2      | Displays device status                  |
+| Push Button       | Triggers the emergency alert            |
+| 3.7V Li-Po battery | 5V regulated power for GSM module      |
+| Power Supply      | 5V (regulated)                          |
 
 ---
 
 ## 🔌 Wiring Overview
 
-### 📟 I2C LCD Connections:
+### 📟 I2C LCD:
 | I2C Pin | Arduino Mega |
 |--------|---------------|
 | VCC    | 5V            |
@@ -38,11 +39,18 @@ A compact and real-time embedded system designed to enhance personal safety. It 
 | SDA    | Pin 20        |
 | SCL    | Pin 21        |
 
-### 📡 GSM SIM800L Connections:
+### 📡 GSM SIM800L:
 | GSM Pin | Arduino Mega |
 |---------|--------------|
-| VCC     | 5V (via AMS1117) |
+| VCC     |3.7V Li-Po battery |
 | GND     | GND          |
 | TX      | RX1 (Pin 19) |
 | RX      | TX1 (Pin 18) |
+
+### 📍 GPS Module (NEO-6M):
+| GPS Pin | Arduino Mega |
+|---------|--------------|
+| VCC     | 5V           |
+| GND     | GND          |
+| TX      | RX2 (Pin 17) |
 

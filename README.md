@@ -1,4 +1,4 @@
-# Smart Safety Device using GSM Module
+# Smart Safety Device using GSM Module and GPS module
 
 # 📱 Smart Safety Device
 
@@ -11,7 +11,9 @@ A real-time GPS and GSM-based safety device designed to send emergency alerts wi
 - 📍 Integrated **GPS module** to track real-time position.
 - 📡 Uses **GSM SIM800L** for communication.
 - 📟 Status display via **I2C LCD 16x2**.
-- 🔘 Simple one-button emergency trigger.
+-🔢 **4x4 Keypad** to:
+- Save 2 emergency contact numbers in EEPROM.
+- Trigger SMS/call via ABCD keys.
 - 🧠 Built on **Arduino Mega 2560**.
 
 ---
@@ -26,7 +28,7 @@ A real-time GPS and GSM-based safety device designed to send emergency alerts wi
 | Push Button       | Triggers the emergency alert            |
 | 3.7V Li-Po battery | 5V regulated power for GSM module      |
 | Power Supply      | 5V (regulated)                          |
-
+| 4x4 Keypad        | Input emergency contacts, trigger alert |
 ---
 
 ## 🔌 Wiring Overview
@@ -53,4 +55,11 @@ A real-time GPS and GSM-based safety device designed to send emergency alerts wi
 | VCC     | 5V           |
 | GND     | GND          |
 | TX      | RX2 (Pin 17) |
+
+
+### 🔢 4x4 Keypad:
+| Keypad Pin | Arduino Mega (Example) |
+|------------|------------------------|
+| R1–R4      | D22–D25                |
+| C1–C4      | D26–D29                |
 

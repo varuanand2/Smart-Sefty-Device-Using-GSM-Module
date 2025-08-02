@@ -2,7 +2,7 @@
 
 # 📱 Smart Safety Device
 
-A real-time GPS and GSM-based safety device designed to send emergency alerts with **live location**. With a single press of a panic button, it sends an SMS containing Google Maps location link to a predefined phone number. The system provides user feedback via an I2C LCD.
+A feature-rich embedded safety system designed for emergency response. This device uses **GPS** to fetch live location, **GSM** to send SMS and make calls, and a **keypad** to store emergency contacts in EEPROM. One-button press or keypad-triggered alerts ensure quick action during danger.
 
 ---
 

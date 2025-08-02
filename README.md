@@ -16,7 +16,7 @@ A feature-rich embedded safety system designed for emergency response. This devi
 - Trigger SMS/call via ABCD keys.
 - 🧠 Built on **Arduino Mega 2560**.
 
----
+
 
 ## 🧰 Hardware Components
 | Component         | Description                             |
@@ -31,6 +31,9 @@ A feature-rich embedded safety system designed for emergency response. This devi
 | 4x4 Keypad        | Input emergency contacts, trigger alert |
 ---
 
+
+
+
 ## 🔌 Wiring Overview
 
 ### 📟 I2C LCD:
@@ -41,7 +44,11 @@ A feature-rich embedded safety system designed for emergency response. This devi
 | SDA    | Pin 20        |
 | SCL    | Pin 21        |
 
+
+
+
 ### 📡 GSM SIM800L:
+
 | GSM Pin | Arduino Mega |
 |---------|--------------|
 | VCC     |3.7V Li-Po battery |
@@ -49,7 +56,11 @@ A feature-rich embedded safety system designed for emergency response. This devi
 | TX      | RX1 (Pin 19) |
 | RX      | TX1 (Pin 18) |
 
+
+
+
 ### 📍 GPS Module (NEO-6M):
+
 | GPS Pin | Arduino Mega |
 |---------|--------------|
 | VCC     | 5V           |
@@ -57,7 +68,10 @@ A feature-rich embedded safety system designed for emergency response. This devi
 | TX      | RX2 (Pin 17) |
 
 
+
+
 ### 🔢 4x4 Keypad:
+
 | Keypad Pin | Arduino Mega (Example) |
 |------------|------------------------|
 | R1–R4      | D22–D25                |
